@@ -1,0 +1,116 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+   scroll-snap-type: y mandatory;
+}
+
+
+section {
+   width: 100%;
+   height: 100vh;
+   scroll-snap-align: start;
+   overflow: hidden;
+   position: relative;
+}
+
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: white;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   z-index: 1000;
+}
+
+nav .logo img {
+   width: 80px;
+   cursor: pointer;
+   margin: 7px 0;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+}
+
+nav ul li {
+   margin: 0 15px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+   font-size: 17px;
+   transition: 0.3s;
+}
+
+nav ul li a:hover {
+   color: #363636;
+}
+
+nav .icon i {
+   font-size: 18px;
+   cursor: pointer;
+}
+
+
+#Home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* Fixed path: uses ../ to go from Css folder to Assets folder */
+   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+               url('../Assets/Homepage image jpg.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.hero-content {
+   text-align: center;
+   color: white;
+}
+
+.hero-content h1 {
+   font-size: 65px;
+   line-height: 1.2;
+   text-shadow: 2px 2px 15px rgba(0,0,0,0.6);
+}
+
+.hero-content h1 span {
+   color: #2ecc71; 
+   font-style: italic;
+}
+
+.hero-content p {
+   font-size: 20px;
+   margin-top: 20px; /* Fixed: Changed from 700px so it's visible */
+   letter-spacing: 1px;
+}
+
+
+.animals-section {
+   background-color: #f4f7f6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.animals-section h2 {
+   font-size: 50px;
+   color: #2d3436;
+}
