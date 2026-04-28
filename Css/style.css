@@ -218,8 +218,8 @@ nav .icon i {
 
 }
 
-.btn-learn
- background-color: #27ae60;
+.btn-learn{
+ background-color: #27ae60;}
 
  .scroll-container {
    height: 100vh;
@@ -245,4 +245,35 @@ nav .icon i {
    z-index: 1000;
  }
 
+ .toggle-input {
+   display: none;
+ }
+
+ .extra-info {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.4s ease;
+   background: #ecf0f1;
+   background-radius: 8px;
+   
+   
+ }
+
+ .toggle-input:checked ~ .extra-info {
+   max-height: 200px;
+   margin-top: 10px;
+ }
+
+ .toggle-input:checked ~ .btn-learn {
+   background-color: #95a5a6
+   content: "Close";
+ }
+
+ .bird-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+   padding: 20px;
+   
+ }
 
