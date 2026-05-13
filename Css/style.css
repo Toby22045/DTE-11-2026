@@ -3,7 +3,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: sans-serif;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -219,7 +219,7 @@ nav .icon i {
 }
 
 .btn-learn{
- background-color: #27ae60;}
+ background-color: #7f7e7e;}
 
 
 
@@ -255,7 +255,7 @@ nav .icon i {
  }
 
  .toggle-input:checked ~ .extra-info {
-   max-height: 200px;
+   max-height: 2000px;
    margin-top: 10px;
  }
 
